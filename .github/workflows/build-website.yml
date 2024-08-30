@@ -5,8 +5,8 @@ on:
     branches: [ master ]
   schedule:
     # Run every hour
-    - cron: '0 */2 * * *' 
-    workflow_dispatch:
+    - cron: '0 */2 * * *'
+workflow_dispatch:
 
 jobs:
 
@@ -31,7 +31,7 @@ jobs:
     - name: Build website
       run: go run main.go
 
-    - name: Commit changes
+    - name: 提交更改
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Build website (automatic) 
