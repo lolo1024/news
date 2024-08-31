@@ -24,8 +24,8 @@ type TemplateData struct {
 }
 
 type Post struct {
-	Link      string
-	Title     string
+	链接      string
+	标题     string
 	Published time.Time
 	Host      string
 }
@@ -371,7 +371,7 @@ func executeTemplate(writer io.Writer, templateData *TemplateData) error {
    return date;
    }
    function momxc() {
-   var birthDay =NewDate("2021-09-23");
+   var birthDay =NewDate("2024-08-31");
    var today=new Date();
    var timeold=today.getTime()-birthDay.getTime();
    var sectimeold=timeold/1000
@@ -382,7 +382,7 @@ func executeTemplate(writer io.Writer, templateData *TemplateData) error {
    var hrsold=Math.floor(e_hrsold);
    var e_minsold=(hrsold-e_hrsold)*-60;
    var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
-   document.getElementById("momk").innerHTML = "本站已运行:"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+   document.getElementById("momk").innerHTML = "本站已存活:"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
    setTimeout(momxc, 1000);
    }momxc();
 	</footer>
